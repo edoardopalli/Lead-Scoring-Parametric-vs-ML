@@ -11,6 +11,8 @@ The insurtech company I collaborated with is a digital broker based in Italy, in
 
 - In order to make the classifier more sensible with respect to the Non-managed class, the dataset has been augmented using a **synthetic data generation** algorithm oversampling that class. The target to be replicated has been identified using a clustering technique, applying a supervised dimensionality reduction to identify clusters that maximize the separation in the embedded space between labelled classes (that are the labels of the output variable in the regression).
 - A **Neural network** has been designed in order to improve the prediction performance. In particular we used a fully connected NN with 2 layers and softfax output layer. In order to avoid overfitting a L2 regularitazion term is added.
+![alt text](https://github.com/edoardopalli/Lead-Scoring-Parametric-vs-ML/blob/main/loss%20and%20accuracy.png)
+
 - **Results**: the two different approaches show similar results in terms of prediction, reaching **68% accuracy** on the test set. The oversampling method lead to a **simultaneous increase of sensitivity and specificity** for the Non-managed class, at a little expense of Sales class, which was the most frequent in the dataset. This achievement is important in terms of **reducing unnecessary costs** for the company, avoiding to manage lead that are not commercially appealing.  
 
 
